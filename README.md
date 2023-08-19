@@ -1,11 +1,11 @@
-<h1 align="center">User Management Web Application</h1>
+<h1 align="center">Task Harbor - A TodoApp</h1>
 <div align="center">
   <h3>
-    <a href="https://2x7tt5.csb.app/" target="_blank" rel=“noreferrer”>
+    <a href="https://4rc7v5.csb.app/" target="_blank" rel=“noreferrer”>
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/gayathri1462/UserManagementApplication" target="_blank" rel=“noreferrer”>
+    <a href="https://github.com/gayathri1462/ToDoApp-TaskHarbor" target="_blank" rel=“noreferrer”>
       Solution
     </a>
   </h3>
@@ -17,32 +17,39 @@
 <img width="877" alt="image" src="https://github.com/gayathri1462/ToDoApp/assets/42805318/4dae3ceb-ab02-474b-9f74-ec3332c6c821">
 
 
-<p> This is a user management web application built using React JS and Redux, featuring CRUD functionalities for efficient user data management. Integrated React Router for seamless navigation and utilized React Saga middleware to handle complex asynchronous operations, ensuring optimal performance and user experience.</p>
+<p>This is a robust task management web application built using React JS and Redux. It empowers users with comprehensive CRUD (Create, Read, Update, Delete) functionalities, enhancing the efficiency of task management. The application harnesses the power of React Thunk middleware to seamlessly manage intricate asynchronous operations, ensuring not only optimal performance but also an impeccable user experience. Stay organized, streamline your tasks, and experience smooth task handling with this intuitive web application.</p>
 
-### Built With
-- Languages: HTML,CSS and TypeScript
-- Libraries/Frameworks: React JS, React Router, Redux Toolkit, Redux Saga, React Icons, React Toastify
-- CSS Preprocessor: SCSS
-- Version Control: Git 
+### Technologies and Tools Used:
+
+- Languages: HTML, CSS, TypeScript
+- Libraries/Frameworks:
+  - React JS
+  - Redux
+  - redux-persist
+  - Redux Thunk
+  - React Icons
+  - axios
+  - styled-components
+- Version Control: Git
 - Package Managers: NPM
 
 ## Features
 
-The user management web application follows the following flow:
+The todo management web application follows the following flow:
 
-1. **Initial Screen**: The initial screen will display a list of users, including their names, email addresses, and other relevant details. If there are no users, it will show a button to navigate to the "Add User" page. If there are existing users, it will display each user's information with "View" and "Delete" buttons.
-
-2. **Header**: The header will have two buttons: "Add User" and "Clear All Data."
-
-3. **Add User**: The "Add User" page will allow users to input necessary information such as name, email address, and additional details. The app should validate the input and add the new user to the user list.
-
-4. **View User**: Clicking on a user's details from the user list will provide a detailed view of the user's information. This view-only mode will allow users to review the user's data without the ability to make changes.
-
-5. **Edit User**: Within the "View User" mode, there should be a "Switch to Edit Mode" button, which will allow users to modify the user's information and save the changes.
-
-6. **Delete User**: Each user's details page will have a "Delete" button to allow users to delete the corresponding user record.
-
-7. **Clear All Data**: The "Clear All Data" button in the header will enable users to delete all user records from the list.
+- The initial screen displays a list of tasks. If there are no taks, it shows an image prompting users to add tasks.
+- An input field and a button are provided.
+- The button is enabled once the user types something. Clicking the button creates and displays a task below.
+- The screen has 3 tabs: "All," "Open," and "Closed," with counts indicating the number of open and closed tasks.
+- Users can remove a task by clicking the remove button or mark it as complete using the tick button.
+- The "created at" indicator shows when a task was created.
+- If there are closed tasks, a remove button is displayed in closed task. Clicking it deletes all closed tasks.
+- When a task is marked as closed, the tick button disappears, and a line is struck through the task text to visually indicate its completed.
+- The app utilizes a public API for CRUD operations, powered by the [public-api-crud-todoApp](https://github.com/ndraaditiya/public-api-crud-todoApp) GitHub repository. 
+- Axios and Redux are employed for seamless integration and data management.
+- Redux persist stores data for page reloads.
+- Styled components are used to enable conditional styling
+- React Icons enhance the user interface.
 
 
 ## How To Use
@@ -50,7 +57,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/gayathri1462/UserManagementApplication
+$ git clone https://github.com/gayathri1462/ToDoApp-TaskHarbor
 
 # Install dependencies
 $ npm install
