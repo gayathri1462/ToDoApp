@@ -1,0 +1,23 @@
+.todoListScreenWrapper {
+  width: 80%;
+  height: 95%;
+  max-height: 95%;
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todoListScreenWrapper .headerText {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  border-bottom: 3px solid #068fff;
+  padding: 0em 0.5em;
+  color: #068fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25em;
+}
